@@ -79,6 +79,25 @@ function App() {
             EMIL<br/>MARIA<br/>GIBY
           </div>
 
+          {/* Sticker Image */}
+          <motion.img 
+            src="/download.png" 
+            alt="Emil Sticker" 
+            initial={{ opacity: 0, scale: 0.5, y: 50, rotate: 0 }}
+            animate={{ opacity: 1, scale: 1, y: 0, rotate: -5 }}
+            transition={{ duration: 0.8, delay: 1, type: 'spring', bounce: 0.6 }}
+            style={{
+              position: 'absolute',
+              right: '2%',
+              bottom: '15%',
+              width: '450px',
+              maxWidth: '55vw',
+              zIndex: 20,
+              filter: 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.8)) drop-shadow(0 20px 30px rgba(0,0,0,0.5))',
+              pointerEvents: 'none'
+            }}
+          />
+
           <motion.div style={{ y: yText, zIndex: 10, marginTop: '-15vh', position: 'relative' }}>
             <motion.h3 
               initial={{ opacity: 0, x: -50 }}
@@ -117,6 +136,9 @@ function App() {
             >
               <a href="mailto:emilmariagiby@gmail.com" className="btn btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.1rem' }}>
                 <Mail size={24} /> Contact Me
+              </a>
+              <a href="/resume.pdf" download="EMIL MARIA GIBY RESUME.pdf" className="btn btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.1rem', backgroundColor: 'var(--accent-secondary)', color: '#000' }}>
+                Download CV
               </a>
               <a href="https://github.com/emilmariagiby" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '1rem', borderRadius: '50%' }}>
                 <Github size={24} />
