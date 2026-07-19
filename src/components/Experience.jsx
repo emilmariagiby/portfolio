@@ -28,7 +28,7 @@ const Experience = () => {
             <div style={{ 
               background: 'var(--accent-primary)', 
               padding: '1rem', 
-              borderRadius: '12px',
+              borderRadius: '0',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center'
@@ -38,10 +38,10 @@ const Experience = () => {
             
             <div style={{ flex: 1 }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', alignItems: 'baseline', marginBottom: '0.5rem' }}>
-                <h3 style={{ fontSize: '1.5rem', margin: 0, color: 'var(--text-main)' }}>Full-Stack Intern</h3>
-                <span style={{ color: 'var(--accent-secondary)', fontWeight: '600' }}>Eram Holdings</span>
+                <h3 style={{ fontSize: '1.5rem', margin: 0, color: 'var(--text-main)', fontFamily: 'var(--font-heading)' }}>Full-Stack Intern</h3>
+                <span style={{ color: 'var(--accent-secondary)', fontWeight: '600', fontFamily: 'var(--font-mono)' }}>Eram Holdings</span>
               </div>
-              <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem', fontSize: '0.9rem' }}>
+              <p style={{ color: 'var(--accent-primary)', marginBottom: '1.5rem', fontSize: '0.9rem', fontFamily: 'var(--font-mono)' }}>
                 MERN Stack, AWS S3, XLSX, pdf-lib
               </p>
               

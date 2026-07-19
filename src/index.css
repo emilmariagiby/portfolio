@@ -21,6 +21,13 @@
 body {
   margin: 0;
   background-color: var(--bg-dark);
+  background-image: 
+    linear-gradient(rgba(6, 182, 212, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(6, 182, 212, 0.1) 1px, transparent 1px),
+    linear-gradient(rgba(6, 182, 212, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(6, 182, 212, 0.05) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
   color: var(--text-main);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
@@ -103,9 +110,13 @@ section {
 }
 
 .section-title {
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  text-align: center;
+  font-size: clamp(3rem, 10vw, 7rem);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  margin-bottom: 4rem;
+  text-align: left;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /* Buttons */
